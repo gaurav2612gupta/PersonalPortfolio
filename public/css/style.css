@@ -1,4 +1,5 @@
 @import 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap';
+
 * {
     margin: 0;
     padding: 0;
@@ -626,6 +627,19 @@ footer span a:hover{
 #fun{
     font-size: 13px;
     color: #1DA1F2;
+}
+
+.social{
+    margin-top: 2rem;
+}
+
+
+.social a{
+    color: #999999;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 2rem;
+    transition: all .5s ease;
 }
 
 /* mediaquery */
