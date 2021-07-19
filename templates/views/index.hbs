@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <title>Gaurav Gupta Profile</title>
+</head>
+
+<body>
+
+    {{>navbar}}
+
+
+    <section id="home" class="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello,my name is </div>
+                <div class="text-2">Gaurav Gupta</div>
+                <div class="text-3">And I'm a <span class="typing"></span></div>
+                <a href="#">Hire Me</a>
+            </div>
+        </div>
+    </section>
+
+    {{>about}}
+
+    {{>skills}}
+
+    {{>projects}}
+
+    {{>contact}}
+
+    {{>footer}}
+
+    <script src="../jq/jquery.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.js" type="text/javascript"></script>
+    <script>
+        $('.nav-link').on('click', function () {
+            $('.navbar-collapse').collapse('hide');
+        });
+        $(document).ready(function() {
+    $(window).scroll(function() {
+            if (this.scrollY > 20) {
+                $('.navbar').addClass("sticky");
+            } else {
+                $('.navbar').removeClass("sticky");
+            }
+        })
+        // slide-up script
+        $('.scroll-up-btn').click(function(){
+            $('html').animate({scrollTop: 0});
+            // removing smooth scroll on slide-up button click
+            $('html').css("scrollBehavior", "auto");
+        });
+    
+        $('.navbar .menu li a').click(function(){
+            // applying again smooth scroll on menu items click
+            $('html').css("scrollBehavior", "smooth");
+        });
+    
+        // toggle menu/navbar script
+        $('.menu-btn').click(function(){
+            $('.navbar .menu').toggleClass("active");
+            $('.menu-btn i').toggleClass("active");
+        });
+        //typing animation
+        var typed = new Typed(".typing",{
+            strings: ["Programmer","Developer","Designer"],
+            typeSpeed: 100,
+            backSpeed: 60,
+            loop: true 
+        })
+        $('.carousel').owlCarousel({
+            margin: 20,
+            loop: true,
+            autoplayTimeOut: 2000,
+            autoplayHoverPause: true,
+            responsive: {
+                0:{
+                    items: 1,
+                    nav: false
+                },
+                600: {
+                    items: 2,
+                    nav: false
+                },
+                1000:{ 
+                    items: 3,
+                    nav: false
+                }
+            }
+        })
+});
+    </script>
+
+</body>
+
+</html>
