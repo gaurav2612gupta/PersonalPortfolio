@@ -8,5 +8,5 @@ mongoose.connect(DB,{
     useFindAndModify:false
 }).then(()=>{
     console.log("Connection Successful")
-}).catch((err)=>console.log('No connection'))
+}).catch((err)=>console.log("Connection Error"))
 

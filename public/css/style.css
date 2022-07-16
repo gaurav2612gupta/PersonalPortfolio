@@ -197,18 +197,19 @@ section {
 /* about */
 
 section{
-    padding: 100px 0;
+    padding: 80px 0;
 }
 
 .about, .skills .projects .contact{
     font-family: 'Poppins',sans-serif;
 }
 .about .title{
+    /* background-color: #999999; */
     position: relative;
     text-align: right;  
     font-size: 10vw;
     font-weight: 1000;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     padding-bottom: 20px;
     font-family: 'Verdana',sans-serif;
     -webkit-text-stroke: 2px #1DA1F2;
@@ -227,6 +228,7 @@ section{
     width: 400px;
     object-fit: cover;
     border-radius: 6px;
+    /* margin-top: -50px; */
 }
 .about .about-content{
     display: flex;
@@ -269,6 +271,28 @@ section{
 .about .about-content .right a:hover{
     color: #1DA1F2;
     background: 0 0
+}
+
+.about .about-content .right .gfg{
+    border: 2px solid #308C47;
+    background: #308C47;
+}
+.about .about-content .right .gfg:hover{
+    color: #308C47;
+}
+.about .about-content .right .leetcode{
+    border: 2px solid #FEA117;
+    background: #FEA117;
+}
+.about .about-content .right .leetcode:hover{
+    color: #FEA117;
+}
+.about .about-content .right .interviewbit{
+    border: 2px solid #60DCE1;
+    background: #60DCE1;
+}
+.about .about-content .right .interviewbit:hover{
+    color: #60DCE1;
 }
 
 
@@ -365,25 +389,25 @@ section{
     background: #1DA1F2;
 }
 .skills .skills-content .right .html::before{
-    width: 80%;
-}
-.skills .skills-content .right .css::before{
     width: 70%;
 }
 .skills .skills-content .right .js::before{
-    width: 55%;
+    width: 65%;
 }
 .skills .skills-content .right .c::before{
     width: 85%;
 }
-.skills .skills-content .right .java::before{
+.skills .skills-content .right .node::before{
     width: 70%;
 }
 .skills .skills-content .right .python::before{
     width: 45%;
 }
 .skills .skills-content .right .react::before{
-    width: 45%;
+    width: 65%;
+}
+.skills .skills-content .right .dbms::before{
+    width: 60%;
 }
 
 
@@ -415,6 +439,7 @@ section{
 }
 
 .projects .carousel .card{
+    height: 25rem;
     background: #888;
     border-radius: 6px;
     padding: 25px 35px;
