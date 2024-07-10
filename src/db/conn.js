@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const DB = 'mongodb+srv://gaurav2612:gaurav2612@cluster0.d1khx.mongodb.net/portfoliowebsitedata?retryWrites=true&w=majority';
+const DB = 'mongodb+srv://gaurav1122gupta:LjX4HzDAxeJzt4m4@cluster0.r75msnd.mongodb.net/';
 
 mongoose.connect(DB,{
     useCreateIndex:true,
